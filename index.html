@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Digital Clock</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+
+
+  <div class="text-center w-full max-w-lg p-8 rounded-3xl bg-gray-800/50 shadow-2xl backdrop-blur-md">
+
+    <h1 class="text-4xl font-extrabold mb-8 text-indigo-400">🌍 Modern Digital Clock</h1>
+
+    <!-- Time Display Section -->
+    <div id="clock" class="text-5xl lg:text-7xl font-mono tracking-widest p-8 rounded-2xl bg-gray-900 shadow-lg border border-gray-700"></div>
+
+    <!-- Controls Section -->
+
+    <div class="mt-8 space-y-6">
+
+      <!-- Timezone Selector  -->
+
+      <div>
+
+        <label for="timezone" class="block text-lg mb-2 font-semibold text-gray-300">Select Timezone:</label>
+
+        <select id="timezone" 
+
+                class="px-4 py-2 w-full rounded-lg bg-gray-700 text-white focus:ring-2 focus:ring-indigo-500">
+
+        </select>
+
+      </div>
+
+      <!-- Format Toggle -->
+
+
+      <div class="flex items-center justify-center gap-4">
+
+        <span class="text-gray-300 font-semibold">Time Format:</span>
+
+        <button id="toggleFormat" 
+
+                class="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 transition font-semibold">
+
+          24-Hour
+
+        </button>
+
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="index.js">
+   
+  </script>
+</body>
+</html>
